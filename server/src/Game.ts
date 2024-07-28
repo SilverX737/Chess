@@ -2,6 +2,9 @@ import { WebSocket } from 'ws';
 import { Chess, Move, Square } from 'chess.js';
 
 
+type GAME_STATUS = 'IN_PROGRESS' | 'COMPLETED' | 'ABANDONED' | 'TIME_UP' | 'PLAYER_EXIT';
+type GAME_RESULT = "WHITE_WINS" | "BLACK_WINS" | "DRAW";
+
 
 
 export class Game {
