@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import  Button from "../components/Button"
 import  ChessBoard  from "../components/ChessBoard"
-import { useSocket } from "../hooks/useSocket";
+import  useSocket  from "../hooks/useSocket.ts";
 import { Chess } from 'chess.js'
 
 // TODO: Move together, there's code repetition here
