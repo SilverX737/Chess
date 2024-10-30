@@ -4,7 +4,6 @@ import  ChessBoard  from "../components/ChessBoard"
 import  useSocket  from "../hooks/useSocket.ts";
 import { Chess } from 'chess.js'
 
-// TODO: Move together, there's code repetition here
 export const INIT_GAME = "init_game";
 export const MOVE = "move";
 export const GAME_OVER = "game_over";
@@ -63,5 +62,3 @@ export const Game = () => {
         </div>
     </div>
 }
-
-
