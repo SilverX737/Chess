@@ -8,3 +8,6 @@ wss.on('connection', function connection(ws) {
     gameManager.addUser(ws);
     ws.on("disconnect", () => gameManager.removeUser(ws));
 });
+wss.on('listening', () => {
+    console.log('WebSocket server is running and listening on port 8080');
+});
